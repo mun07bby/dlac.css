@@ -1,0 +1,292 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f9;
+  color: #222222;
+  line-height: 1.6;
+}
+
+/* (a) Centered Header & Navbar */
+.bank-header {
+  background-color: #002D62; /* Dark Blue */
+  color: #ffffff;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  border-bottom: 4px solid #C9A63A; /* Gold */
+}
+
+.bank-header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.25s ease;
+}
+
+.navbar a:hover {
+  color: #C9A63A;
+}
+
+/* (a) Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  background-color: #001a3a;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.hero-overlay h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Centered Main Content Wrapper */
+.container {
+  max-width: 1000px;
+  margin: 45px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.section-title {
+  color: #002D62;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* (a) Three Centered Loan Product Cards (Flexbox) */
+.loan-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.card {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #d8e0ea;
+  border-top: 5px solid #002D62;
+  border-radius: 8px;
+  padding: 30px 22px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  color: #002D62;
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.interest-rate {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #9c7c1d;
+  margin-bottom: 20px;
+}
+
+.btn-apply {
+  display: inline-block;
+  background-color: #002D62;
+  color: #C9A63A;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 11px 24px;
+  border-radius: 5px;
+  transition: background-color 0.25s ease;
+}
+
+.btn-apply:hover {
+  background-color: #001d40;
+}
+
+/* (a) Centered Loan Comparison Table */
+table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+th, td {
+  border: 1px solid #cfd8e3;
+  padding: 14px 16px;
+  text-align: center;
+}
+
+thead .banner-row th {
+  background-color: #002D62;
+  color: #C9A63A;
+  font-size: 1.2rem;
+}
+
+thead .col-row th {
+  background-color: #00408a;
+  color: #ffffff;
+}
+
+tbody td:first-child,
+thead .col-row th:first-child {
+  text-align: left;
+  font-weight: bold;
+  color: #002D62;
+}
+
+thead .col-row th:first-child {
+  color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8fafd;
+}
+
+/* (b) Centered Personal Loan Application Form */
+.form-wrapper {
+  max-width: 680px;
+  margin: 45px auto;
+  background-color: #ffffff;
+  padding: 35px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+  border: 2px solid #002D62;
+  border-radius: 6px;
+  padding: 25px 30px;
+}
+
+legend {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #002D62;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #002D62;
+  margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group select {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #002D62;
+}
+
+.eligibility-note {
+  margin-top: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+.checkbox-group {
+  margin: 22px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  font-weight: bold;
+  color: #222222;
+  cursor: pointer;
+}
+
+/* Full-Width Submit Button */
+.btn-submit {
+  width: 100%;
+  background-color: #002D62;
+  color: #C9A63A;
+  font-size: 1.05rem;
+  font-weight: bold;
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.btn-submit:hover {
+  background-color: #001d40;
+}
+
+/* Footer */
+footer {
+  background-color: #002D62;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  border-top: 4px solid #C9A63A;
+}

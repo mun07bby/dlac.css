@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stanbic Bank Uganda — Personal Loan Application</title>
+  <link rel="stylesheet" href="dlac.css">
+</head>
+<body>
+
+  <!-- Header & Navbar -->
+  <header class="bank-header">
+    <h1>Stanbic Bank Uganda</h1>
+    <nav class="navbar">
+      <a href="index.html">Loan Products</a>
+      <a href="personal-loan.html">Personal Loan Application</a>
+    </nav>
+  </header>
+
+  <!-- (b) Personal Loan Application Form -->
+  <main class="form-wrapper">
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Loan Application</legend>
+
+        <div class="form-group">
+          <label for="title">Title</label>
+          <select id="title" name="title">
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Ms">Ms</option>
+            <option value="Dr">Dr</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last_name" placeholder="Enter your last name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. 0772123456" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="e.g. applicant@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="district">District</label>
+          <select id="district" name="district">
+            <option value="Kampala">Kampala</option>
+            <option value="Wakiso">Wakiso</option>
+            <option value="Mukono">Mukono</option>
+            <option value="Jinja">Jinja</option>
+            <option value="Mbarara">Mbarara</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="salary">Monthly Salary (UGX)</label>
+          <input type="number" id="salary" name="salary" min="300000" placeholder="Minimum UGX 300,000" required>
+          <p class="eligibility-note" style="background:#EAF3DE; color:#27500A; padding:8px;">You appear eligible for this loan.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="loan-amount">Loan Amount Requested (UGX)</label>
+          <input type="number" id="loan-amount" name="loan_amount" placeholder="e.g. 5000000" required>
+        </div>
+
+        <div class="form-group">
+          <label for="repayment-period">Repayment Period</label>
+          <select id="repayment-period" name="repayment_period">
+            <option value="12">12 months</option>
+            <option value="24">24 months</option>
+            <option value="36">36 months</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="loan-purpose">Loan Purpose</label>
+          <select id="loan-purpose" name="loan_purpose">
+            <option value="School Fees">School Fees</option>
+            <option value="Medical">Medical</option>
+            <option value="Home Improvement">Home Improvement</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="declaration" name="declaration" required>
+          <label for="declaration">I confirm that the information provided is accurate.</label>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit Application</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Stanbic Bank Uganda Limited. Regulated by Bank of Uganda.</p>
+  </footer>
+
+</body>
+</html>
